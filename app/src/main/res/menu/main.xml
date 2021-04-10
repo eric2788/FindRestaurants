@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_filter"
+        android:onClick="onFilterClick"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_baseline_filter_list_24"
+        android:title="@string/menu_filter"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_login"
+        android:orderInCategory="100"
+        android:onClick="onLoginClick"
+        android:icon="@drawable/ic_baseline_login_24"
+        android:title="@string/menu_login"
+        app:showAsAction="never" />
+
+</menu>

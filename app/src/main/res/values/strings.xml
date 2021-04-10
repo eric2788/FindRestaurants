@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">Find Restaurants</string>
+    <string name="title_activity_auth">Login Or Register</string>
+    <string name="title_activity_update_acitivty">Update/Edit Restaurant</string>
+    <string name="title_activity_view">Viewing Restaurant</string>
+    <string name="title_activity_comment">Viewing Comments</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">FindRestaurants</string>
+    <string name="nav_header_subtitle">by Kenneth Sin</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_login">Login</string>
+    <string name="menu_filter">Filter</string>
+
+    <string name="test_rest">好玩餐廳</string>
+    <string name="test_cate">日式料理</string>
+    <string name="image_desp">image_desp</string>
+    <string name="add_button">ADD_BUTTON</string>
+
+    <string name="prompt_username">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_up">Sign up</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome, "</string>
+
+    <string name="login_failed">"Login failed"</string>
+    <string name="register_failed">Register failed</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="rest_name">Name</string>
+    <string name="rest_website">Website</string>
+    <string name="website">abc.com</string>
+    <string name="phone">12345678</string>
+    <string name="rest_phone">Phone</string>
+    <string name="rest_address">Address</string>
+    <string name="address">Flat A, 22/F, ABC street</string>
+    <string name="rest_photo">Photo</string>
+    <string name="photo">Photo</string>
+    <string name="file">File</string>
+    <string name="rest__category">Category</string>
+
+    <string-array name="category_list">
+        <item>Japanese Food</item>
+        <item>Chinese Food</item>
+        <item>Thai Food</item>
+        <item>Korean Food</item>
+        <item>Vietnam Food</item>
+    </string-array>
+
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>>
+
+    <string name="the_list_is_empty">the list is empty</string>
+    <string name="field_required">this field is required</string>
+    <string name="phone_num_error">Phone number should have 8 numbers</string>
+    <string name="website_error">Website should have be a valid domain name</string>
+
+
+    <string name="long_para_test">
+        我們在與人對話的時候，較為隨意，不需要先思考好說話的內容，也不需事先安排陳述的順序，因為可以隨時補充前面忘了提到的重點。寫作卻不一樣，必須先構思好想要表達的內容、陳述的方法與順序，這就是作文架構：在文章一開始，要想辦法引起讀者閱讀興趣 – 不然讀者根本不會想要看我們的文章; 文章中，要有指引的文字，讓讀者能輕鬆抓住文章重點 – 不像在面對面交談時，我們可以透過表情，手勢來讓對方理解; 在文章的結尾，要摘要整篇文章的重點 – 以便加強讀者的印象。
+        因為英文作文的架構與中文作文有很大的差異，導致很多人的中文作文很好，但在寫英文作文的時候卻有些困擾。有需要進一步了解的讀者，我們在如何寫好一篇英文作文，徹底掌握英文作文架構與寫作技巧這篇文章中，詳細敘述了英文作文的架構、寫作技巧與步驟，可以點擊進入，閱讀這篇文章。
+    </string>
+
+    <string name="short_comment">挺好的餐廳，就是有點難吃。</string>
+    <string name="write_your_comment">Write your comment:</string>
+    <string name="enter">Enter</string>
+    <string name="submitting">Submitting…</string>
+    <string name="delete_ensure">Are you sure to delete?</string>
+    <string name="title_activity_rating">RatingActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="write_your_review">Write your review</string>
+    <string name="leave_a_star">Leave a star</string>
+    <string name="select_categories">Select Categories:</string>
+    <string name="filter_btn">Filter</string>
+
+
+</resources>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="40dp"
+        android:paddingVertical="50dp"
+        android:background="@drawable/border"
+        android:overScrollMode="ifContentScrolls"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/rest_name"
+                android:textSize="17sp"
+                android:paddingTop="10dp"/>
+
+            <EditText
+                android:id="@+id/input_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="Test"
+                android:inputType="text" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/rest_website"
+                android:textSize="17sp"
+                android:paddingTop="10dp"/>
+
+            <EditText
+                android:id="@+id/input_website"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="Test"
+                android:inputType="textWebEditText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/rest_phone"
+                android:textSize="17sp"
+                android:paddingTop="10dp"/>
+
+            <EditText
+                android:id="@+id/input_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="Test"
+                android:maxLength="8"
+                android:inputType="phone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/rest_address"
+                android:textSize="17sp"
+                android:paddingTop="10dp"/>
+
+            <EditText
+                android:id="@+id/input_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="Test"
+                android:gravity="start|top"
+                android:maxLines="4"
+                android:maxHeight="400dp"
+                android:ems="10"
+                android:inputType="textMultiLine" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/rest__category"
+                android:textSize="17sp"
+                android:paddingTop="10dp"/>
+
+            <Spinner
+                android:id="@+id/input_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:minHeight="40dp"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/input_photo"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/border2"
+            android:contentDescription="@string/photo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/take_photo"
+                android:layout_marginHorizontal="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/photo"
+                android:drawableLeft="@drawable/ic_baseline_add_a_photo_24" />
+
+            <Button
+                android:id="@+id/take_photo_alt"
+                android:layout_marginHorizontal="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/file"
+                android:drawableLeft="@drawable/ic_baseline_add_photo_alternate_24" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include android:id="@+id/save_loading" layout="@layout/loading_overlay" android:visibility="gone"/>
+
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:layout_margin="0dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/write_your_comment"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/create_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border2"
+        android:gravity="start"
+        android:allowUndo="true"
+        android:minLines="4"
+        android:inputType="textMultiLine"
+        android:autofillHints="say something" />
+
+    <Button
+        android:id="@+id/create_button"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/enter"/>
+
+</LinearLayout>

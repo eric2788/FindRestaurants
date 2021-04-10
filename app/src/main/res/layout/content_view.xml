@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="30dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:elevation="10dp"
+            android:background="@drawable/border2">
+
+            <ImageView
+                android:id="@+id/view_photo"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/border2"
+                android:contentDescription="@string/photo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/view_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/view_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:rowCount="1"
+                android:columnCount="2"
+                android:paddingHorizontal="20dp"
+                android:background="@drawable/border2"
+                >
+
+                <TextView
+                    android:id="@+id/view_comments_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:gravity="fill"
+                    android:layout_columnWeight="2"
+                    android:onClick="onCommentsClick"
+                    android:layout_rowWeight="5"
+                    android:drawablePadding="7dp"
+                    app:drawableStartCompat="@drawable/ic_baseline_comment_24"
+                    app:drawableTint="@color/gray" />
+
+
+                <TextView
+                    android:id="@+id/view_total_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:onClick="onRatingClick"
+                    android:gravity="fill"
+                    android:layout_columnWeight="2"
+                    android:layout_rowWeight="5"
+                    android:drawablePadding="7dp"
+                    app:drawableStartCompat="@drawable/ic_baseline_star_rate_24"
+                    app:drawableTint="@color/orange"
+                    />
+
+
+            </GridLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/view_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="10dp"
+                    app:drawableTint="@color/gray"
+                    android:drawablePadding="10dp"
+                    app:drawableStartCompat="@drawable/ic_baseline_local_phone_24" />
+
+                <TextView
+                    android:id="@+id/view_website"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="10dp"
+                    android:drawablePadding="10dp"
+                    app:drawableTint="@color/gray"
+                    app:drawableStartCompat="@drawable/ic_baseline_web_24" />
+
+                <TextView
+                    android:id="@+id/view_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="10dp"
+                    android:drawablePadding="10dp"
+                    app:drawableTint="@color/gray"
+                    app:drawableStartCompat="@drawable/ic_baseline_location_on_24" />
+
+                <TextView
+                    android:id="@+id/view_joined_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="10dp"
+                    android:drawablePadding="10dp"
+                    app:drawableTint="@color/gray"
+                    app:drawableStartCompat="@drawable/ic_baseline_access_time_24" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include android:id="@+id/view_loading" layout="@layout/loading_overlay" android:visibility="gone" />
+
+
+</RelativeLayout>
