@@ -18,7 +18,7 @@ public class CommentViewModel extends MutableListViewModel<Comment> {
     }
 
     @Override
-    public List<Comment> readFromDataSource(int page) {
+    protected List<Comment> readFromDataSource(int page) {
         return commentService.listComments(restId, page);
     }
 

@@ -146,18 +146,6 @@ public class MainActivity extends AppCompatActivity {
 
         restaurantsViewModel.getCategories().observe(this, cate -> updateView());
 
-
-        // ========= Unpaid Section ===========
-        // remove after paid
-
-        new AlertDialog.Builder(this)
-                .setTitle("你正在使用未付費版本。")
-                .setMessage("製作者: Eric Lam \n網址: github.com/eric2788\n應繳費用: 900HKD")
-                .setNegativeButton("知道了", (d, x)-> d.dismiss())
-                .show();
-
-        //=====================================
-
     }
 
 
