@@ -18,7 +18,6 @@ public class DatabaseService {
 
     public void initializeDatabase(Context context){
         this.sqLiteHelper = new SQLiteHelper(context);
-        this.reset();
     }
 
     public SQLiteDatabase getDatabase(){

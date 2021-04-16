@@ -1,7 +1,5 @@
 package me.sin.findrestaurants.ui.home;
 
-import android.Manifest;
-import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -15,8 +13,6 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.core.content.ContextCompat;
-import androidx.core.content.PermissionChecker;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -117,7 +113,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onQueryTextSubmit(String query) {
                 String q = query.trim();
-                Logger.getGlobal().info("Searching with query: "+q);
+                Logger.getGlobal().info("Searching with query: " + q);
                 restaurantsViewModel.setQuery(q);
                 updateView();
                 return true;
