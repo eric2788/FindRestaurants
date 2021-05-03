@@ -24,7 +24,7 @@ public abstract class MutableListViewModel<T> extends ListViewModel<T> {
                 if (insertToDataSource(data)){
                     this.mutationState.postValue(MutationState.SUCCESS);
                 }else{
-                    this.mutationState.postValue(new MutationState("You can only submit once."));
+                    this.mutationState.postValue(new MutationState("Submit failed"));
                 }
             }catch (Exception e){
                 e.printStackTrace();
