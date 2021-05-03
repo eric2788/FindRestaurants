@@ -37,6 +37,7 @@ public class FormStateViewModel extends ViewModel {
 
     public void onDataChanged(TextView title, TextView address, TextView phone, TextView website){
         RequiredFormState state = new RequiredFormState();
+        /*
         if (title.getText().toString().isEmpty()){
             state.setErrorField(title);
         }else if (website.length() > 0 && !Pattern.compile(".+\\..+").matcher(website.getText()).find()){
@@ -50,6 +51,8 @@ public class FormStateViewModel extends ViewModel {
         }else{
             state.setDataValid(true);
         }
+         */
+        state.setDataValid(true);
         formState.setValue(state);
     }
 

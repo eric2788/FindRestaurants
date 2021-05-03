@@ -39,18 +39,13 @@ public class CommentService {
     }
 
     public boolean createComment(int restId, Comment comment) {
-        try (Cursor cursor = this.database.rawQuery("select user_id from Comment where rest_id = ? and user_id = ?", new String[]{String.valueOf(restId), comment.getAuthor()});
-             SQLiteStatement stmt = this.database.compileStatement("insert into Comment (rest_id, user_id, content, date) VALUES (?,?,?,?)")) {
-            if (cursor.getCount() == 0) {
-                stmt.bindDouble(1, restId);
-                stmt.bindString(2, comment.getAuthor());
-                stmt.bindString(3, comment.getComments());
-                stmt.bindLong(4, comment.getDate().getTime());
-                return stmt.executeInsert() >= 0;
-            }
-            return false;
+        try (SQLiteStatement stmt = this.database.compileStatement("insert into Comment (rest_id, user_id, content, date) VALUES (?,?,?,?)")) {
+            stmt.bindDouble(1, restId);
+            stmt.bindString(2, comment.getAuthor());
+            stmt.bindString(3, comment.getComments());
+            stmt.bindLong(4, comment.getDate().getTime());
+            return stmt.executeInsert() >= 0;
         }
-
     }
 
     public boolean deleteComment(int id) {

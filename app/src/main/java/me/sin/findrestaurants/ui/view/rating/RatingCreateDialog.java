@@ -48,10 +48,12 @@ public class RatingCreateDialog extends BottomSheetDialogFragment {
             return;
         }
         input.setOnClickListener(v -> {
+            /*
             if (content.length() == 0) {
                 content.setError(getString(R.string.field_required));
                 return;
             }
+             */
             input.setText(R.string.submitting);
             viewModel.createData(new Rating(authService.getUserId(), star.getRating(), content.getText().toString()));
             dismiss();

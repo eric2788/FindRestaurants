@@ -56,7 +56,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:autofillHints="Test"
-                android:inputType="textWebEditText" />
+                android:inputType="text" />
 
         </LinearLayout>
 
@@ -78,7 +78,7 @@
                 android:layout_height="wrap_content"
                 android:autofillHints="Test"
                 android:maxLength="8"
-                android:inputType="phone" />
+                android:inputType="text" />
 
         </LinearLayout>
 

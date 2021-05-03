@@ -41,7 +41,7 @@ public class CommentCreateDialog extends BottomSheetDialogFragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         Button input = view.findViewById(R.id.create_button);
-        input.setEnabled(false);
+        input.setEnabled(true);
         TextView content = view.findViewById(R.id.create_content);
         content.addTextChangedListener(new TextWatcher() {
             @Override
@@ -54,11 +54,13 @@ public class CommentCreateDialog extends BottomSheetDialogFragment {
 
             @Override
             public void afterTextChanged(Editable s) {
+                /*
                 if (s.length() < 15) {
                     content.setError("the text should at least 15 length");
                 } else {
                     input.setEnabled(true);
                 }
+                 */
             }
         });
         if (authService.getUserId() == null) {
@@ -67,10 +69,13 @@ public class CommentCreateDialog extends BottomSheetDialogFragment {
             return;
         }
         input.setOnClickListener(v -> {
+            /*
             if (content.length() == 0) {
                 content.setError(getString(R.string.field_required));
                 return;
             }
+
+             */
             input.setText(R.string.submitting);
             viewModel.createData(new Comment(authService.getUserId(), content.getText().toString()));
             dismiss();
